@@ -11,9 +11,10 @@
     <script src=""http://3.6.93.159:7883/machstatz/get_all_users:"></script>
 <ul>
   <li><a href="#" class="codeLink" id="thispage">Source of this page</a></li>
-  <li><a href="page2.html" class="codeLink">Source of page 2</a></li>
-  <li><a href="page3.html" class="codeLink">Source of page 3</a></li>
-  <li><a href="page4.html" class="codeLink">Source of page 4</a></li>
+ <li><a href="#" class="codeLink" email="thispage">Source of this page</a></li>
+ <li><a href="#" class="codeLink" first name="thispage">Source of this page</a></li>
+ <li><a href="#" class="codeLink" last name="thispage">Source of this page</a></li>
+ <li><a href="#" class="codeLink" username="thispage">Source of this page</a></li>
   <hr>
   <code id="codeOutput"></code>
 </ul>
