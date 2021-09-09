@@ -1,0 +1,35 @@
+<html><head>
+    <style>
+            code {
+      display: block;
+      white-space: pre;
+      font-family: Consolas, Courier, monospace;
+    }
+    </style>
+</head>
+<body>
+    <script src=""http://3.6.93.159:7883/machstatz/get_all_users:"></script>
+<ul>
+  <li><a href="#" class="codeLink" id="thispage">Source of this page</a></li>
+  <li><a href="page2.html" class="codeLink">Source of page 2</a></li>
+  <li><a href="page3.html" class="codeLink">Source of page 3</a></li>
+  <li><a href="page4.html" class="codeLink">Source of page 4</a></li>
+  <hr>
+  <code id="codeOutput"></code>
+</ul>
+    <script type="text/javascript">
+            $(function() {
+      $(".codeLink").on("click", function(e) {
+        e.preventDefault(); // cancel the link
+        if (this.id == "thispage") {
+          $("#codeOutput").html(("<html>" + $("html").html() + "</html>").replace(/</g, "<"));
+        } else {
+          $.get($(this).prop("href"), function(data) {
+            $("#codeOutput").html(data.replace(/</g, "<"));
+          });
+        }
+      });
+    });
+    </script>
+
+</body></html>
